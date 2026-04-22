@@ -2,6 +2,12 @@
 
 Projeto em Python que usa webcam, MediaPipe e OpenCV para acompanhar a execucao de elevacao lateral em tempo real.
 
+## Tecnologias
+
+- Python 3.11+
+- MediaPipe
+- OpenCV
+
 ## O que o app faz
 
 - detecta ombros, cotovelos e pulsos pela camera;
@@ -33,10 +39,21 @@ No terminal:
 
 ```bash
 cd lraise
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
 python pose.py
 ```
 
 Se o arquivo `pose_landmarker_lite.task` nao estiver presente, o app tenta baixar o modelo automaticamente.
+
+## Dependencias
+
+As dependencias principais do projeto estao em `requirements.txt`:
+
+- `mediapipe`
+- `opencv-contrib-python`
+- `numpy`
 
 ## Controles
 
@@ -44,5 +61,4 @@ Se o arquivo `pose_landmarker_lite.task` nao estiver presente, o app tenta baixa
 
 ## Observacoes
 
-- A interface foi mantida simples para destacar a camera e a deteccao em tempo real.
 - A fase do movimento ainda usa o lado direito como referencia principal para iniciar e encerrar repeticoes.
