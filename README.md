@@ -33,20 +33,6 @@ Projeto em Python que usa webcam, MediaPipe e OpenCV para acompanhar a execucao 
    - `Repeticao 1: correta`
    - `Repeticao 2: incorreta (Ombros encolhidos)`
 
-## Como executar
-
-No terminal:
-
-```bash
-cd lraise
-python -m venv .venv
-.venv\Scripts\activate
-pip install -r requirements.txt
-python pose.py
-```
-
-Se o arquivo `pose_landmarker_lite.task` nao estiver presente, o app tenta baixar o modelo automaticamente.
-
 ## Dependencias
 
 As dependencias principais do projeto estao em `requirements.txt`:
